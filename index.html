@@ -1,198 +1,154 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>sweetstrip_radomm</title>
-
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Custom Style -->
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-
-    .reveal {
-      opacity: 0;
-      transform: translateY(40px);
-      transition: all 0.8s ease;
-    }
-
-    .reveal.active {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sweetstrip_radomm | Premium Treats</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glass-nav { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); }
+    </style>
 </head>
+<body class="bg-gray-50 text-gray-900">
 
-<body class="bg-gray-900 text-white font-sans">
-
-<!-- ================= NAVBAR ================= -->
-<header class="fixed w-full bg-gray-900/80 backdrop-blur z-50 shadow-md">
-  <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
-    <h1 class="text-xl font-bold text-yellow-400">sweetstrip_radomm</h1>
-
-    <nav class="hidden md:flex gap-6">
-      <a href="#home" class="hover:text-yellow-400">Home</a>
-      <a href="#shop" class="hover:text-yellow-400">Shop</a>
-      <a href="#about" class="hover:text-yellow-400">About</a>
-      <a href="#contact" class="hover:text-yellow-400">Contact</a>
+    <nav class="fixed w-full z-50 glass-nav border-b border-gray-100">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-tighter text-indigo-600">
+                sweetstrip_radomm<span class="text-gray-400">.</span>
+            </div>
+            <div class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-widest">
+                <a href="#" class="hover:text-indigo-600 transition">Beranda</a>
+                <a href="#produk" class="hover:text-indigo-600 transition">Katalog</a>
+                <a href="#tentang" class="hover:text-indigo-600 transition">Cerita Kami</a>
+                <a href="#" class="hover:text-indigo-600 transition">Kontak</a>
+            </div>
+            <div class="flex items-center space-x-5">
+                <button class="text-gray-700 hover:text-indigo-600"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="relative text-gray-700 hover:text-indigo-600">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="absolute -top-2 -right-2 bg-indigo-600 text-white text-[10px] rounded-full px-1.5">0</span>
+                </button>
+            </div>
+        </div>
     </nav>
 
-    <div class="flex gap-4 text-xl">
-      <span>🔍</span>
-      <span>🛒</span>
-    </div>
-  </div>
-</header>
+    <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="container mx-auto px-6 flex flex-col lg:flex-row items-center">
+            <div class="lg:w-1/2 z-10">
+                <h1 class="text-5xl lg:text-7xl font-bold leading-tight mb-6">
+                    Kelezatan yang <span class="text-indigo-600">Meleleh</span> di Setiap Gigitan.
+                </h1>
+                <p class="text-gray-600 text-lg mb-8 max-w-lg">
+                    Temukan sensasi baru camilan strip premium dari sweetstrip_radomm. Dibuat dengan bahan organik pilihan untuk kebahagiaan harian Anda.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#produk" class="bg-indigo-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-indigo-700 transition shadow-lg shadow-indigo-200">Belanja Sekarang</a>
+                    <a href="#tentang" class="bg-white border border-gray-200 px-8 py-4 rounded-full font-semibold hover:bg-gray-50 transition">Pelajari Lebih Lanjut</a>
+                </div>
+            </div>
+            <div class="lg:w-1/2 mt-12 lg:mt-0 relative">
+                <div class="absolute -inset-4 bg-indigo-100 rounded-full blur-3xl opacity-30"></div>
+                <img src="https://plus.unsplash.com/premium_photo-1732818659738-edd686a45d82?q=80&w=1170&auto=format&fit=crop" 
+                     alt="Hero Sweetstrip" 
+                     class="relative rounded-2xl shadow-2xl w-full object-cover h-[500px]">
+            </div>
+        </div>
+    </header>
 
-<!-- ================= HERO ================= -->
-<section id="home" class="h-screen bg-cover bg-center flex items-center justify-center text-center"
-style="background-image: url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f');">
-  <div class="bg-black/60 p-8 rounded-xl reveal">
-    <h2 class="text-4xl md:text-6xl font-bold mb-4">Elevate Your Style</h2>
-    <p class="mb-6 text-gray-300">Discover premium fashion from sweetstrip_radomm</p>
-    <a href="#shop" class="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-300">
-      Shop Now
-    </a>
-  </div>
-</section>
+    <section id="produk" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl font-bold mb-2">Koleksi Terpopuler</h2>
+                    <p class="text-gray-500">Pilihan terbaik dari dapur sweetstrip_radomm</p>
+                </div>
+                <a href="#" class="text-indigo-600 font-semibold border-b-2 border-indigo-600">Lihat Semua</a>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-xl bg-gray-100 mb-4">
+                        <img src="https://images.unsplash.com/photo-1581798459219-318e76aecc7b?q=80&w=600&auto=format&fit=crop" alt="Produk" class="w-full h-80 object-cover group-hover:scale-105 transition duration-500">
+                        <button class="absolute bottom-4 left-4 right-4 bg-white py-3 rounded-lg font-semibold opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition duration-300 shadow-xl">
+                            + Keranjang
+                        </button>
+                    </div>
+                    <h3 class="text-xl font-bold">Original Sweet Strip</h3>
+                    <p class="text-gray-500 mb-2">Manis alami tanpa pemanis buatan</p>
+                    <p class="text-indigo-600 font-bold text-lg">Rp 25.000</p>
+                </div>
 
-<!-- ================= PRODUCTS ================= -->
-<section id="shop" class="max-w-7xl mx-auto py-20 px-4">
-  <h2 class="text-3xl font-bold text-center mb-10 reveal">Featured Products</h2>
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-xl bg-gray-100 mb-4">
+                        <img src="https://images.unsplash.com/photo-1559181567-c3190ca9959b?q=80&w=600&auto=format&fit=crop" alt="Produk" class="w-full h-80 object-cover group-hover:scale-105 transition duration-500">
+                        <button class="absolute bottom-4 left-4 right-4 bg-white py-3 rounded-lg font-semibold opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition duration-300 shadow-xl">
+                            + Keranjang
+                        </button>
+                    </div>
+                    <h3 class="text-xl font-bold">Dark Choco Edition</h3>
+                    <p class="text-gray-500 mb-2">Perpaduan cokelat pahit dan strip manis</p>
+                    <p class="text-indigo-600 font-bold text-lg">Rp 32.000</p>
+                </div>
 
-  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-xl bg-gray-100 mb-4">
+                        <img src="https://images.unsplash.com/photo-1505935428862-770b6f24f629?q=80&w=600&auto=format&fit=crop" alt="Produk" class="w-full h-80 object-cover group-hover:scale-105 transition duration-500">
+                        <button class="absolute bottom-4 left-4 right-4 bg-white py-3 rounded-lg font-semibold opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition duration-300 shadow-xl">
+                            + Keranjang
+                        </button>
+                    </div>
+                    <h3 class="text-xl font-bold">Caramel Sea Salt</h3>
+                    <p class="text-gray-500 mb-2">Rasa unik yang bikin ketagihan</p>
+                    <p class="text-indigo-600 font-bold text-lg">Rp 28.000</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- PRODUCT CARD -->
-    <div class="bg-gray-800 rounded-xl overflow-hidden hover:scale-105 transition reveal">
-      <img src="https://images.unsplash.com/photo-1521335629791-ce4aec67dd53" class="w-full h-64 object-cover">
-      <div class="p-4">
-        <h3 class="font-semibold">Premium Hoodie</h3>
-        <p class="text-yellow-400">Rp 350.000</p>
-        <button class="mt-3 w-full bg-yellow-400 text-black py-2 rounded hover:bg-yellow-300">
-          Add to Cart
-        </button>
-      </div>
-    </div>
+    <section id="tentang" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="bg-indigo-600 rounded-3xl p-12 lg:p-20 text-white flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-10 lg:mb-0">
+                    <h2 class="text-4xl font-bold mb-6">Misi sweetstrip_radomm</h2>
+                    <p class="text-indigo-100 text-lg leading-relaxed mb-6">
+                        Kami percaya bahwa setiap momen kecil berhak mendapatkan perayaan. Itulah mengapa kami menciptakan sweetstrip_radomm—bukan sekadar camilan, tapi bentuk apresiasi untuk diri Anda sendiri.
+                    </p>
+                    <div class="flex items-center space-x-6">
+                        <div>
+                            <p class="text-3xl font-bold text-white">100%</p>
+                            <p class="text-indigo-200 text-sm uppercase">Alami</p>
+                        </div>
+                        <div class="border-l border-indigo-400 h-10"></div>
+                        <div>
+                            <p class="text-3xl font-bold text-white">10k+</p>
+                            <p class="text-indigo-200 text-sm uppercase">Pelanggan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 lg:pl-20">
+                    <div class="grid grid-cols-2 gap-4">
+                        <img src="https://images.unsplash.com/photo-1511381939415-e44015466834?q=80&w=300&auto=format&fit=crop" class="rounded-xl shadow-lg mt-8" alt="Store">
+                        <img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60?q=80&w=300&auto=format&fit=crop" class="rounded-xl shadow-lg" alt="Kitchen">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- DUPLICATE 5 MORE -->
-    <div class="bg-gray-800 rounded-xl overflow-hidden hover:scale-105 transition reveal">
-      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" class="w-full h-64 object-cover">
-      <div class="p-4">
-        <h3 class="font-semibold">Sneakers</h3>
-        <p class="text-yellow-400">Rp 500.000</p>
-        <button class="mt-3 w-full bg-yellow-400 text-black py-2 rounded">Add to Cart</button>
-      </div>
-    </div>
-
-    <div class="bg-gray-800 rounded-xl overflow-hidden hover:scale-105 transition reveal">
-      <img src="https://images.unsplash.com/photo-1520975922284-9c5e2b2fdf0e" class="w-full h-64 object-cover">
-      <div class="p-4">
-        <h3 class="font-semibold">Luxury Bag</h3>
-        <p class="text-yellow-400">Rp 800.000</p>
-        <button class="mt-3 w-full bg-yellow-400 text-black py-2 rounded">Add to Cart</button>
-      </div>
-    </div>
-
-    <div class="bg-gray-800 rounded-xl overflow-hidden hover:scale-105 transition reveal">
-      <img src="https://images.unsplash.com/photo-1519741497674-611481863552" class="w-full h-64 object-cover">
-      <div class="p-4">
-        <h3 class="font-semibold">Classic Watch</h3>
-        <p class="text-yellow-400">Rp 1.200.000</p>
-        <button class="mt-3 w-full bg-yellow-400 text-black py-2 rounded">Add to Cart</button>
-      </div>
-    </div>
-
-    <div class="bg-gray-800 rounded-xl overflow-hidden hover:scale-105 transition reveal">
-      <img src="https://images.unsplash.com/photo-1514996937319-344454492b37" class="w-full h-64 object-cover">
-      <div class="p-4">
-        <h3 class="font-semibold">Street T-Shirt</h3>
-        <p class="text-yellow-400">Rp 200.000</p>
-        <button class="mt-3 w-full bg-yellow-400 text-black py-2 rounded">Add to Cart</button>
-      </div>
-    </div>
-
-    <div class="bg-gray-800 rounded-xl overflow-hidden hover:scale-105 transition reveal">
-      <img src="https://images.unsplash.com/photo-1526178613552-2b45c6c302f0" class="w-full h-64 object-cover">
-      <div class="p-4">
-        <h3 class="font-semibold">Stylish Glasses</h3>
-        <p class="text-yellow-400">Rp 150.000</p>
-        <button class="mt-3 w-full bg-yellow-400 text-black py-2 rounded">Add to Cart</button>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ================= ABOUT ================= -->
-<section id="about" class="bg-gray-800 py-20 px-4">
-  <div class="max-w-4xl mx-auto text-center reveal">
-    <h2 class="text-3xl font-bold mb-6">About Us</h2>
-    <p class="text-gray-300">
-      sweetstrip_radomm hadir untuk menghadirkan fashion premium dengan sentuhan modern dan minimalis.
-      Kami percaya bahwa gaya adalah bentuk ekspresi diri, dan setiap produk kami dirancang untuk
-      meningkatkan kepercayaan diri Anda.
-    </p>
-  </div>
-</section>
-
-<!-- ================= TESTIMONIAL ================= -->
-<section class="py-20 px-4 max-w-6xl mx-auto">
-  <h2 class="text-3xl font-bold text-center mb-10 reveal">What Our Customers Say</h2>
-
-  <div class="grid md:grid-cols-3 gap-6">
-
-    <div class="bg-gray-800 p-6 rounded-xl reveal">
-      <p>"Kualitasnya premium banget, worth it!"</p>
-      <h4 class="mt-4 text-yellow-400">- Andi</h4>
-    </div>
-
-    <div class="bg-gray-800 p-6 rounded-xl reveal">
-      <p>"Desainnya clean dan elegan, suka banget."</p>
-      <h4 class="mt-4 text-yellow-400">- Sinta</h4>
-    </div>
-
-    <div class="bg-gray-800 p-6 rounded-xl reveal">
-      <p>"Pengiriman cepat dan packaging rapi."</p>
-      <h4 class="mt-4 text-yellow-400">- Budi</h4>
-    </div>
-
-  </div>
-</section>
-
-<!-- ================= FOOTER ================= -->
-<footer id="contact" class="bg-gray-900 border-t border-gray-700 py-10 text-center">
-  <p>Contact: sweetstrip@email.com</p>
-  <div class="flex justify-center gap-4 my-4">
-    <span>📷</span>
-    <span>🐦</span>
-    <span>📘</span>
-  </div>
-  <p class="text-gray-500">© 2026 sweetstrip_radomm</p>
-</footer>
-
-<!-- ================= JS ================= -->
-<script>
-  // Scroll Reveal
-  function reveal() {
-    let reveals = document.querySelectorAll(".reveal");
-
-    reveals.forEach(el => {
-      let windowHeight = window.innerHeight;
-      let elementTop = el.getBoundingClientRect().top;
-
-      if (elementTop < windowHeight - 100) {
-        el.classList.add("active");
-      }
-    });
-  }
-
-  window.addEventListener("scroll", reveal);
-  reveal();
-</script>
+    <footer class="bg-white pt-20 pb-10 border-t border-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl font-bold mb-8">sweetstrip_radomm</h2>
+            <div class="flex justify-center space-x-8 mb-12 text-gray-400">
+                <a href="#" class="hover:text-indigo-600"><i class="fa-brands fa-instagram text-2xl"></i></a>
+                <a href="#" class="hover:text-indigo-600"><i class="fa-brands fa-whatsapp text-2xl"></i></a>
+                <a href="#" class="hover:text-indigo-600"><i class="fa-brands fa-tiktok text-2xl"></i></a>
+            </div>
+            <p class="text-gray-500 text-sm">© 2026 sweetstrip_radomm. Dibuat dengan penuh rasa manis.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
